@@ -6,29 +6,38 @@
 }
 
 #startContBox header {
+  font-size: 42px;
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 #startContBox header p {
-  font-size: 20px;
+  font-size: 36px;
+}
+
+#startBtn {
+  padding: 8px 12px;
+  font-size: 36px;
+  margin-bottom: 80px;
 }
 
 #startContBox footer {
-  font-size: 24px;
+  font-size: 48px;
   text-align: center;
 }
 
 .quiz-box {
+  font-size: 36px;
   border: 2px solid #ccc;
   border-radius: 30px;
   padding: 40px 40px 0px 40px;
   margin: 40px auto;
-  max-width: 600px;
+  max-width: 80%;
   background-color: #f9f9f9;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
 }
 
 .question {
-  font-size: 1.2rem;
+  font-size: 32px;
   margin-bottom: 20px;
 }
 
@@ -47,9 +56,16 @@
   font-weight: bold;
 }
 
+#restartBtn,
 #resultBox {
+  font-size: 48px;
   text-align: center;
+  padding: 6px 12px;
 }
 #scoreText {
   margin-bottom: 30px;
+}
+
+#btnBox button {
+  font-size: 24px;
 }
