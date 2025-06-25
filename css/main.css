@@ -1,0 +1,55 @@
+#startContBox {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#startContBox header {
+  margin-top: 120px;
+}
+#startContBox header p {
+  font-size: 20px;
+}
+
+#startContBox footer {
+  font-size: 24px;
+  text-align: center;
+}
+
+.quiz-box {
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  padding: 40px 40px 0px 40px;
+  margin: 40px auto;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.question {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.choices li {
+  margin-bottom: 12px;
+}
+
+#nextBtn,
+#submitBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+
+  border-radius: 10px;
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+}
+
+#resultBox {
+  text-align: center;
+}
+#scoreText {
+  margin-bottom: 30px;
+}

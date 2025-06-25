@@ -1,0 +1,42 @@
+/* 1. 기본 마진, 패딩 제거 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. 링크 색상과 밑줄 제거 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 3. 리스트 스타일 제거 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 4. 이미지, 비디오 등 미디어 요소는 max-width 설정 */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 5. 폼 요소 기본 스타일 일부 제거 */
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* 6. 버튼 커서 */
+button {
+  cursor: pointer;
+}

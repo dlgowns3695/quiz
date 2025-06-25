@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>철도법령 CBT</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/result.css" />
+
+    <style>
+      /* #startContBox {
+        text-align: center;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="startContBox">
+      <!-- 상단 인사 및 상태 -->
+      <header>
+        <h1>어서 오세요! <span id="userName">사용자</span>님</h1>
+        <p>현재 <span id="testCount">0</span>번째 문제풀이를 하고 있습니다.</p>
+      </header>
+
+      <!-- 메인 시작 버튼 -->
+      <main>
+        <button id="startBtn">문제 풀기 시작하기</button>
+      </main>
+
+      <!-- 하단 평균 정답률 -->
+      <footer>
+        <p>현재 평균 점수: <span id="avgScore">0</span>점</p>
+      </footer>
+    </div>
+
+    <!-- 기존 문제 영역 아래에 결과 & 다시 시작 버튼 추가 -->
+    <section id="quizContainer" style="display: none">
+      <div class="quiz-box">
+        <p class="question"><span>0. </span>문제</p>
+        <ul class="choices">
+          <li>
+            <input type="radio" name="quiz" value="1" id="q1" /><label for="q1"
+              >선지1</label
+            >
+          </li>
+          <li>
+            <input type="radio" name="quiz" value="2" id="q2" /><label for="q2"
+              >선지2</label
+            >
+          </li>
+          <li>
+            <input type="radio" name="quiz" value="3" id="q3" /><label for="q3"
+              >선지3</label
+            >
+          </li>
+          <li>
+            <input type="radio" name="quiz" value="4" id="q4" /><label for="q4"
+              >선지4</label
+            >
+          </li>
+          <li>
+            <input type="radio" name="quiz" value="5" id="q5" /><label for="q5"
+              >선지5</label
+            >
+          </li>
+        </ul>
+        <div id="btnBox">
+          <button id="nextBtn" style="float: left">다음 문제</button>
+          <!-- 새로 추가하는 다음 문제 버튼 -->
+          <button id="submitBtn" style="float: right">채점하기</button>
+          <!-- 기존 채점하기 버튼 -->
+        </div>
+      </div>
+    </section>
+
+    <section id="resultBox" style="display: none; margin-top: 20px">
+      <p id="scoreText">점수: <span>0</span>점</p>
+      <button id="restartBtn">다시 시작하기</button>
+    </section>
+  </body>
+
+  <!-- JS 연결 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</html>
