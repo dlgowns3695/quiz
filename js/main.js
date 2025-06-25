@@ -1,6 +1,7 @@
 let currentQuestionIndex = 0;
 let questionsData = [];
 let userScores = []; // 문제별 점수 저장
+const QUESTION_LIMIT = 10; // 보여줄 문제 개수 (자유롭게 수정 가능)
 
 $(document).ready(function () {
   // 페이지 로드 시 이전 기록(점수, 횟수) 화면에 갱신
@@ -84,7 +85,6 @@ function loadQuestions() {
   fetch("data/questions.json")
     .then((response) => response.json())
     .then((data) => {
-      // 데이터 섞기 함수(셔플)
       function shuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
@@ -93,8 +93,8 @@ function loadQuestions() {
         return array;
       }
 
-      // JSON에서 문제 배열 데이터 섞기
-      questionsData = shuffle(data);
+      const shuffled = shuffle(data);
+      questionsData = shuffled.slice(0, QUESTION_LIMIT); // 원하는 문제 개수만 자르기
 
       currentQuestionIndex = 0;
       userScores = [];
